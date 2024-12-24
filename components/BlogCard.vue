@@ -24,7 +24,7 @@ import { defineProps, computed } from 'vue';
 import { format } from 'date-fns';
 
 interface BlogCardProps {
-  id: string;
+  id: number;
   title: string;
   category: string;
   date: number;

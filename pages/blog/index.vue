@@ -16,7 +16,7 @@
 </template>
 
 <script setup>
-import BlogCard from '../../components/blog/BlogCard.vue';
+import BlogCard from '../../components/BlogCard.vue';
 
 // Mock дані блогу
 const blogPosts = [

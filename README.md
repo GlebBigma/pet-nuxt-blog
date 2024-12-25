@@ -1,75 +1,16 @@
-# Nuxt Minimal Starter
+# Simple pet project with Nuxt 3
 
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+- **Project Technologies**: Technologies used in this project include:
+    - Vue 3
+    - Nuxt 3
+    - TailwindCSS
+    - TypeScript
+    - date-fns
+    - Git
+    - Node.js
+    - pnpm
 
-## Setup
+You can open this project here:
 
-Make sure to install dependencies:
-
-```bash
-# npm
-npm install
-
-# pnpm
-pnpm install
-
-# yarn
-yarn install
-
-# bun
-bun install
-```
-
-## Development Server
-
-Start the development server on `http://localhost:3000`:
-
-```bash
-# npm
-npm run dev
-
-# pnpm
-pnpm dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
-```
-
-## Production
-
-Build the application for production:
-
-```bash
-# npm
-npm run build
-
-# pnpm
-pnpm build
-
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+## Contacts
+You can check out my portfolio and CV here: [Visit My CV](https://glebbigma.github.io/portfolio_2/)

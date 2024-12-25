@@ -1,4 +1,4 @@
-import posts from '../data/test.json';
+import posts from '../../data/test.json';
 
 export default defineEventHandler(() => {
   return posts;

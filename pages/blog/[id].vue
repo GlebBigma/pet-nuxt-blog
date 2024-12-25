@@ -16,11 +16,6 @@
           <p class="text-gray-600 mt-2">{{ formattedDate }}</p>
           <p class="text-gray-500 italic mt-1">Category: {{ post.category }}</p>
         </div>
-        <section class="mt-6 text-lg text-gray-700">
-          <p>
-            This is a placeholder for the detailed content of the post. The structure does not currently include detailed text.
-          </p>
-        </section>
         <div class="mt-6">
           <NuxtLink
               to="/blog"

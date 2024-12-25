@@ -7,8 +7,8 @@
           :id="post.id"
           :title="post.title"
           :category="post.category"
-          :date="post.createdAt"
-          :imageSrc="post.imgSrc"
+          :createdAt="post.createdAt"
+          :imgSrc="post.imgSrc"
           class="h-full"
       />
     </div>

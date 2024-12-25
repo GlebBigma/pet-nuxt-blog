@@ -1,7 +1,7 @@
 <template>
   <div class="w-72 mx-auto border rounded-lg shadow-lg overflow-hidden bg-white">
     <div class="h-48 bg-gray-200">
-      <img :src="imageSrc" alt="Blog Image" class="w-full h-full object-cover" />
+      <img :src="imgSrc" alt="Blog Image" class="w-full h-full object-cover" />
     </div>
     <div class="p-4">
       <h2 class="text-xl font-semibold text-gray-800 truncate">{{ title }}</h2>
@@ -27,6 +27,6 @@ import { Post } from '~/types/post';
 const props = defineProps<Post>();
 
 const formattedDate = computed(() => {
-  return format(new Date(props.date), 'yy/MM/dd');
+  return format(new Date(props.createdAt), 'yy/MM/dd');
 });
 </script>

@@ -38,13 +38,17 @@
 import { useRoute } from 'vue-router';
 import { useFetch } from '#app';
 import { format } from 'date-fns';
+import { Post } from '~/types/post';
+import { Ref, computed } from 'vue';
 
 const route = useRoute();
 const postId = route.params.id;
 
-const { data: post, error } = useFetch(`/api/posts/${postId}`);
+const { data: post, error } = useFetch<Post>(`/api/posts/${postId}`);
+
+const typedPost: Ref<Post | null> = post as Ref<Post | null>;
 
 const formattedDate = computed(() => {
-  return post.value ? format(new Date(post.value.createdAt), 'yyyy/MM/dd') : '';
+  return typedPost.value ? format(new Date(typedPost.value.createdAt), 'yyyy/MM/dd') : '';
 });
 </script>

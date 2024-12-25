@@ -15,11 +15,12 @@
   </div>
 </template>
 
-<script setup>
+<script lang="ts" setup>
 import { useFetch } from '#app';
+import { Post } from '~/types/post';
 import BlogCard from '../../components/BlogCard.vue';
 
-const { data: posts, error } = useFetch('/api/posts');
+const { data: posts, error } = useFetch<Post[]>('/api/posts');
 
 if (error.value) {
   console.error('Error fetching posts:', error.value);

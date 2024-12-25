@@ -1,8 +1,11 @@
 import posts from '../../data/test.json';
+import { Post } from '~/types/post';
+
+const typedPosts: Post[] = posts;
 
 export default defineEventHandler((event) => {
   const id = parseInt(event.context.params?.id || '', 10);
-  const post = posts.find((p) => p.id === id);
+  const post = typedPosts.find((p) => p.id === id);
 
   if (!post) {
     throw createError({
@@ -13,3 +16,4 @@ export default defineEventHandler((event) => {
 
   return post;
 });
+

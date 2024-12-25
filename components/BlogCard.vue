@@ -22,16 +22,9 @@
 <script lang="ts" setup>
 import { defineProps, computed } from 'vue';
 import { format } from 'date-fns';
+import { Post } from '~/types/post';
 
-interface BlogCardProps {
-  id: number;
-  title: string;
-  category: string;
-  date: number;
-  imageSrc: string;
-}
-
-const props = defineProps<BlogCardProps>();
+const props = defineProps<Post>();
 
 const formattedDate = computed(() => {
   return format(new Date(props.date), 'yy/MM/dd');
